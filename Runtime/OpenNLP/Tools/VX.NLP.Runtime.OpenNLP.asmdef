@@ -1,0 +1,17 @@
+{
+    "name": "VX.NLP.Runtime.OpenNLP",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4cb1ae9a716e8e447bc1a8026800340d",
+        "GUID:094afe385ce3df645871cfee687d8406"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
