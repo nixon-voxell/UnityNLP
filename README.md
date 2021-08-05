@@ -1,6 +1,19 @@
 # Unity NLP
 
-This package is still under development. [OpenNLP](https://archive.codeplex.com/?p=sharpnlp) is used as the backend of this package.
+This package is still under development. [OpenNLP](https://archive.codeplex.com/?p=sharpnlp) is used as the backend of this package. If you work with C# only, I recommend you use use this [repository](https://github.com/AlexPoint/OpenNlp) instead.
+
+- [Unity NLP](#unity-nlp)
+  - [Installation](#installation)
+  - [OpenNLP](#opennlp)
+- [Examples](#examples)
+  - [Tokenizer](#tokenizer)
+  - [Sentence Splitter](#sentence-splitter)
+  - [Part of Speech](#part-of-speech)
+  - [Named Entity Recognition](#named-entity-recognition)
+  - [Support the project!](#support-the-project)
+  - [Join the community!](#join-the-community)
+  - [License](#license)
+  - [References](#references)
 
 ## Installation
 
@@ -25,33 +38,25 @@ OpenNLP is a collection of natural language processing tools written in C#. Curr
 
 # Examples
 
-The examples below utilizes the [UnityUtil](https://github.com/voxell-tech/UnityUtil) package. This package is not dependent on UnityUtil, but if you want to follow along the examples and import the samples, it is recommended to install UnityUtil.
+The examples below utilizes the [UnityUtil](https://github.com/voxell-tech/UnityUtil) package. This package is not dependent on UnityUtil, but if you want to follow along the examples and import the samples, it is recommended to install UnityUtil. All the sample code are in the `Samples~` folder which can be imported into unity from the package manager.
 
-## Tokenize
-
-```cs
-using UnityEngine;
-using OpenNLP.Tools.Tokenize;
-using Voxell.Inspector;
-using Voxell;
-
-public class NLPTokenizer : MonoBehaviour
-{
-  [StreamingAssetFilePath]
-  public string tokenizerModel;
-  [TextArea(1, 5)] public string sentence;
-  public string[] tokens;
-
-  [Button]
-  public void Tokenize()
-  {
-    EnglishMaximumEntropyTokenizer tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
-    tokens = tokenizer.Tokenize(sentence);
-  }
-}
-```
+## Tokenizer
 
 ![Tokenize](Pictures~/TokenizerExample.png)
+
+## Sentence Splitter
+
+![SentenceSplitter](Pictures~/SentenceSplitterExample.png)
+
+## Part of Speech
+
+For the full list of part of speech abbreviations, please refer to the [Penn Treebank Project](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html).
+
+![POS](Pictures~/POSTaggerExample.png)
+
+## Named Entity Recognition
+
+![NER](Pictures~/NamedEntityRecognitionExample.png)
 
 ## Support the project!
 
@@ -75,3 +80,8 @@ public class NLPTokenizer : MonoBehaviour
 This repository as a whole is licensed under the GNU Public License, Version 3. Individual files may have a different, but compatible license.
 
 See [license file](./LICENSE) for details.
+
+## References
+
+- [SharpNLP](https://archive.codeplex.com/?p=sharpnlp)
+- [OpenNLP Repository](https://github.com/AlexPoint/OpenNlp)
