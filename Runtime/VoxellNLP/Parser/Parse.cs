@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the Parse.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 // 
@@ -39,7 +39,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Runtime.Serialization;
 
-namespace VoxellNLP.Tools.Parser
+namespace Voxell.NLP.Tools.Parser
 {
 
   /// <summary>

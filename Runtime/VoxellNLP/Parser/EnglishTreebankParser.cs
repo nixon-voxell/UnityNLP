@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the EnglishTreebankParser.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 // 
@@ -37,7 +37,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace VoxellNLP.Tools.Parser
+namespace Voxell.NLP.Tools.Parser
 {
   /// <summary>
   /// Class that wraps the MaximumEntropyParser to make it easy to perform full parses using the English Treebank
@@ -46,7 +46,7 @@ namespace VoxellNLP.Tools.Parser
   public sealed class EnglishTreebankParser
   {
     MaximumEntropyParser mParser;
-    VoxellNLP.Tools.Tokenize.EnglishMaximumEntropyTokenizer mTokenizer;
+    Voxell.NLP.Tools.Tokenize.EnglishMaximumEntropyTokenizer mTokenizer;
 
     public EnglishTreebankParser(string dataDirectory, bool useTagDictionary, bool useCaseSensitiveTagDictionary, int beamSize, double advancePercentage)
     {
@@ -72,7 +72,7 @@ namespace VoxellNLP.Tools.Parser
 
       mParser = new MaximumEntropyParser(buildModel, checkModel, posTagger, chunker, headRules, beamSize, advancePercentage);
     
-      mTokenizer = new VoxellNLP.Tools.Tokenize.EnglishMaximumEntropyTokenizer(dataDirectory + "EnglishTok.nbin");
+      mTokenizer = new Voxell.NLP.Tools.Tokenize.EnglishMaximumEntropyTokenizer(dataDirectory + "EnglishTok.nbin");
 
     }
     

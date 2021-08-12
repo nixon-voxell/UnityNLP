@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the HeadRules.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2004 Thomas Morton
 // 
@@ -35,7 +35,7 @@
 
 using System;
 
-namespace VoxellNLP.Tools.Parser
+namespace Voxell.NLP.Tools.Parser
 {
   /// <summary>
   /// Interface for encoding the head rules associated with parsing.

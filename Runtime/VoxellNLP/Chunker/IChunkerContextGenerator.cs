@@ -15,12 +15,12 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the ChunkerContextGenerator.java source file found in the
-//original java implementation of VoxellNLP.
+//original java implementation of Voxell.NLP.
 
 using System;
 using System.Collections;
 
-namespace VoxellNLP.Tools.Chunker
+namespace Voxell.NLP.Tools.Chunker
 {
   /// <summary>
   /// Context generator interface for chunkers.

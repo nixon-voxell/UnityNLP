@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the AbstractMentionFinder.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace VoxellNLP.Tools.Coreference.Mention
+namespace Voxell.NLP.Tools.Coreference.Mention
 {
   /// <summary>
     /// Provides default implementation of many of the methods in the IMentionFinder interface.
@@ -269,7 +269,7 @@ namespace VoxellNLP.Tools.Coreference.Mention
         }
         if (token.SyntacticType.StartsWith("PRP") && IsHandledPronoun(token.ToString()))
         {
-          Mention possessivePronounExtent = new Mention(token.Span, token.Span, token.EntityId, null, VoxellNLP.Tools.Coreference.Linker.PronounModifier);
+          Mention possessivePronounExtent = new Mention(token.Span, token.Span, token.EntityId, null, Voxell.NLP.Tools.Coreference.Linker.PronounModifier);
           //System.err.println("AbstractEntityFinder.collectPossesivePronouns: adding possesive pronoun: "+tok+" "+tok.getEntityId());
           entities.Add(possessivePronounExtent);
           //System.err.println("AbstractMentionFinder: adding pos-pro: "+ppExtent);

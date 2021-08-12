@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the DefiniteNounResolver.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -34,11 +34,11 @@
 //Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 using System;
-using DiscourseEntity = VoxellNLP.Tools.Coreference.DiscourseEntity;
-using MentionContext = VoxellNLP.Tools.Coreference.Mention.MentionContext;
-using Parse = VoxellNLP.Tools.Coreference.Mention.IParse;
+using DiscourseEntity = Voxell.NLP.Tools.Coreference.DiscourseEntity;
+using MentionContext = Voxell.NLP.Tools.Coreference.Mention.MentionContext;
+using Parse = Voxell.NLP.Tools.Coreference.Mention.IParse;
 using System.Collections.Generic;
-namespace VoxellNLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Tools.Coreference.Resolver
 {
   
   /// <summary> Resolves coreference between definite noun-phrases. </summary>

@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the POSEventCollector.java and POSEventStream.java source files found in the
-//original java implementation of VoxellNLP.  Those source files contain the following headers:
+//original java implementation of Voxell.NLP.  Those source files contain the following headers:
 
 // Copyright (C) 2003 Tom Morton
 //
@@ -53,7 +53,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace VoxellNLP.Tools.PosTagger
+namespace Voxell.NLP.Tools.PosTagger
 {
   /// <summary> 
   /// An event generator for the maxent POS Tagger.

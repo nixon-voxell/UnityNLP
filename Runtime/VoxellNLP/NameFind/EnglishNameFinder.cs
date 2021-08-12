@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the EnglishNameFinder.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 // 
@@ -35,10 +35,10 @@
 
 using System.IO;
 using System.Collections.Generic;
-using VoxellNLP.Tools.Util;
-using VoxellNLP.Tools.Parser;
+using Voxell.NLP.Tools.Util;
+using Voxell.NLP.Tools.Parser;
 
-namespace VoxellNLP.Tools.NameFind
+namespace Voxell.NLP.Tools.NameFind
 {
   /// <summary> Class is used to create a name finder for English.</summary>
   public class EnglishNameFinder 

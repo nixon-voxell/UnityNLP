@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the POSDictionary.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2004 Thomas Morton
 // 
@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace VoxellNLP.Tools.PosTagger
+namespace Voxell.NLP.Tools.PosTagger
 {
   /// <summary>
   /// Provides a means of determining which tags are valid for a particular word based on a tag dictionary read from a file.

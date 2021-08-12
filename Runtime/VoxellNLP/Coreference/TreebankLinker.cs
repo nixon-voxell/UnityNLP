@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the TreebankLinker.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -35,13 +35,13 @@
 
 using System;
 using System.Collections.Generic;
-using VoxellNLP.Tools.Coreference;
-using VoxellNLP.Tools.Coreference.Mention;
-using VoxellNLP.Tools.Parser;
+using Voxell.NLP.Tools.Coreference;
+using Voxell.NLP.Tools.Coreference.Mention;
+using Voxell.NLP.Tools.Parser;
 
 using System.Text;
 
-namespace VoxellNLP.Tools.Lang.English
+namespace Voxell.NLP.Tools.Lang.English
 {
   /// <summary>
     /// This class perform coreference for treebank style parses.  

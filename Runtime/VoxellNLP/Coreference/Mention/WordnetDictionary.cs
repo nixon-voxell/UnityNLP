@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the JWNLDictionary.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -38,7 +38,7 @@ using System.Collections.Generic;
 using SharpWordNet;
 using SharpWordNet.Morph;
 
-namespace VoxellNLP.Tools.Coreference.Mention
+namespace Voxell.NLP.Tools.Coreference.Mention
 {
   /// <summary> 
     /// An implementation of the Dictionary interface using the SharpWordnet library. </summary>

@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the GenderEnum.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -35,7 +35,7 @@
 
 using System;
 
-namespace VoxellNLP.Tools.Coreference.Similarity
+namespace Voxell.NLP.Tools.Coreference.Similarity
 {
   /// <summary>
     /// Enumeration of gender types.

@@ -17,7 +17,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace VoxellNLP.Tools.Util
+namespace Voxell.NLP.Tools.Util
 {
   /// <summary>
   /// This class manages a tree set collection of sorted elements.

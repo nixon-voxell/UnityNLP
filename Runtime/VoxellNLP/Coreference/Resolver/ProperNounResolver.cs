@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the ProperNounResolver.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -36,10 +36,10 @@
 using System;
 //UPGRADE_TODO: The type 'java.util.regex.Pattern' could not be found. If it was not included in the conversion, there may be compiler issues. "ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?index='!DefaultContextWindowIndex'&keyword='jlca1262'"
 using System.Text.RegularExpressions;
-using DiscourseEntity = VoxellNLP.Tools.Coreference.DiscourseEntity;
-using MentionContext = VoxellNLP.Tools.Coreference.Mention.MentionContext;
+using DiscourseEntity = Voxell.NLP.Tools.Coreference.DiscourseEntity;
+using MentionContext = Voxell.NLP.Tools.Coreference.Mention.MentionContext;
 using System.Collections.Generic;
-namespace VoxellNLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Tools.Coreference.Resolver
 {
   
   /// <summary> Resolves coreference between proper nouns.</summary>

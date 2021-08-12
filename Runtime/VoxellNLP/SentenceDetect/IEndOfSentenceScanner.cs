@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the EndOfSentenceScanner.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 // Copyright (c) 2001, Eric D. Friedman All Rights Reserved.
 //
@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace VoxellNLP.Tools.SentenceDetect
+namespace Voxell.NLP.Tools.SentenceDetect
 {
   /// <summary>
   /// Scans strings, StringBuilders, and char[] arrays for the offsets of

@@ -18,7 +18,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace VoxellNLP.Tools.Util
+namespace Voxell.NLP.Tools.Util
 {
   /// <summary> 
   /// This class manages a hash set of elements.

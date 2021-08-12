@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the Context.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace VoxellNLP.Tools.Coreference.Similarity
+namespace Voxell.NLP.Tools.Coreference.Similarity
 {
   /// <summary>
     /// Specifies the context of a mention for computing gender, number, and semantic compatibility.

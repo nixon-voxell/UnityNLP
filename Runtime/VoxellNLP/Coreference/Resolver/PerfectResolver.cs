@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the PerfectResolver.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -34,10 +34,10 @@
 //Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 using System;
-using DiscourseEntity = VoxellNLP.Tools.Coreference.DiscourseEntity;
-using DiscourseModel = VoxellNLP.Tools.Coreference.DiscourseModel;
-using MentionContext = VoxellNLP.Tools.Coreference.Mention.MentionContext;
-namespace VoxellNLP.Tools.Coreference.Resolver
+using DiscourseEntity = Voxell.NLP.Tools.Coreference.DiscourseEntity;
+using DiscourseModel = Voxell.NLP.Tools.Coreference.DiscourseModel;
+using MentionContext = Voxell.NLP.Tools.Coreference.Mention.MentionContext;
+namespace Voxell.NLP.Tools.Coreference.Resolver
 {
   
   /// <summary> Resolver used in training to update the discourse model based on the coreference annotation.  </summary>

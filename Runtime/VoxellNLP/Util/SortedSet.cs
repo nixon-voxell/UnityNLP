@@ -17,7 +17,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace VoxellNLP.Tools.Util
+namespace Voxell.NLP.Tools.Util
 {
   /// <summary>
   /// This class contains methods to manage a sorted collection.

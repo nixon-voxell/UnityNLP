@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the MaxentResolver.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -37,7 +37,7 @@ using System;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 
-namespace VoxellNLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Tools.Coreference.Resolver
 {
   /// <summary> 
     /// Provides common functionality used by classes which implement the {@link IResolver} interface
@@ -910,7 +910,7 @@ namespace VoxellNLP.Tools.Coreference.Resolver
       bool noTheModifiersMatch = false;
             List<string> features = new List<string>();
             Mention.IParse[] mentionTokens = mention.TokenParses;
-      VoxellNLP.Tools.Util.Set<string> entityContextModifierSet = ConstructModifierSet(mentionTokens, mention.HeadTokenIndex);
+      Voxell.NLP.Tools.Util.Set<string> entityContextModifierSet = ConstructModifierSet(mentionTokens, mention.HeadTokenIndex);
       string mentionHeadString = mention.HeadTokenText.ToLower();
       Util.Set<string> featureSet = new Util.HashSet<string>();
 

@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the ParserEventStream.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 // 
@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace VoxellNLP.Tools.Parser
+namespace Voxell.NLP.Tools.Parser
 {
   /// <summary>
   ///  Enumerated type of event types for the parser. 
@@ -58,7 +58,7 @@ namespace VoxellNLP.Tools.Parser
     private BuildContextGenerator mBuildContextGenerator;
     private CheckContextGenerator mCheckContextGenerator;
     private ChunkContextGenerator mChunkContextGenerator;
-    private VoxellNLP.Tools.PosTagger.IPosContextGenerator mPosContextGenerator;
+    private Voxell.NLP.Tools.PosTagger.IPosContextGenerator mPosContextGenerator;
     private SharpEntropy.ITrainingDataReader<string> mDataReader;
     private SharpEntropy.TrainingEvent[] mEvents;
     private int mEventIndex;

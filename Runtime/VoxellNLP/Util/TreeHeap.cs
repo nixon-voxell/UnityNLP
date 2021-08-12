@@ -15,11 +15,11 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the TreeHeap.java source file found in the
-//original java implementation of VoxellNLP. 
+//original java implementation of Voxell.NLP. 
 
 using System;
 
-namespace VoxellNLP.Tools.Util
+namespace Voxell.NLP.Tools.Util
 {
   /// <summary>
   /// An implemention of the heap interface based on SortedSet.

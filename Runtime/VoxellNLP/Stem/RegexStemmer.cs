@@ -20,7 +20,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace VoxellNLP.Stem
+namespace Voxell.NLP.Stem
 {
   /// <summary>
   /// A stemmer that uses regular expressions to identify morphological affixes.

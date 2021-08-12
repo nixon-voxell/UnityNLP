@@ -1,5 +1,5 @@
 using UnityEngine;
-using VoxellNLP.Tools.SentenceDetect;
+using Voxell.NLP.Tools.SentenceDetect;
 using Voxell.Inspector;
 using Voxell;
 

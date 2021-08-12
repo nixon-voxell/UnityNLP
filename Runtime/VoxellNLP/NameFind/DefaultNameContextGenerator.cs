@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the DefaultNameContextGenerator.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 // 
@@ -37,9 +37,9 @@ using System;
 using System.Text.RegularExpressions;
 using System.Collections;
 using System.Collections.Generic;
-using VoxellNLP.Tools.Util;
+using Voxell.NLP.Tools.Util;
 
-namespace VoxellNLP.Tools.NameFind
+namespace Voxell.NLP.Tools.NameFind
 {
   /// <summary>
   /// Class for determining contextual features for a tag/chunk style named-entity recognizer.

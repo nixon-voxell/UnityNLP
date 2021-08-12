@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the DefaultLinker.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -34,11 +34,11 @@
 //Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 using System;
-using VoxellNLP.Tools.Coreference.Mention;
-using VoxellNLP.Tools.Coreference.Resolver;
-using VoxellNLP.Tools.Coreference.Similarity;
+using Voxell.NLP.Tools.Coreference.Mention;
+using Voxell.NLP.Tools.Coreference.Resolver;
+using Voxell.NLP.Tools.Coreference.Similarity;
 
-namespace VoxellNLP.Tools.Coreference
+namespace Voxell.NLP.Tools.Coreference
 {
   /// <summary>
     /// This class perform coreference for treebank style parses or for noun-phrase chunked data.    

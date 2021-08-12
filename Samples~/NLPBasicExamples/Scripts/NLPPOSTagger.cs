@@ -1,6 +1,6 @@
 using UnityEngine;
-using VoxellNLP.Tools.PosTagger;
-using VoxellNLP.Tools.Tokenize;
+using Voxell.NLP.Tools.PosTagger;
+using Voxell.NLP.Tools.Tokenize;
 using Voxell.Inspector;
 using Voxell;
 

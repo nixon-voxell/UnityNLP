@@ -1,4 +1,4 @@
-﻿namespace VoxellNLP.Stem
+﻿namespace Voxell.NLP.Stem
 {
   public class StemOptions
   {

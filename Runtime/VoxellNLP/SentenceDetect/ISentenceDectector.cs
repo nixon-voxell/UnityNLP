@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the SentenceDetector.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 // Copyright (C) 2002 Jason Baldridge and Gann Bierner
 //
@@ -35,7 +35,7 @@
 
 using System;
 
-namespace VoxellNLP.Tools.SentenceDetect
+namespace Voxell.NLP.Tools.SentenceDetect
 {
   /// <summary> 
   /// The interface for sentence detectors, which find the sentence boundaries in

@@ -16,7 +16,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the SpeechPronounResolver.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -35,11 +35,11 @@
 //Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 using System;
-using DiscourseEntity = VoxellNLP.Tools.Coreference.DiscourseEntity;
-using Linker = VoxellNLP.Tools.Coreference.ILinker;
-using MentionContext = VoxellNLP.Tools.Coreference.Mention.MentionContext;
+using DiscourseEntity = Voxell.NLP.Tools.Coreference.DiscourseEntity;
+using Linker = Voxell.NLP.Tools.Coreference.ILinker;
+using MentionContext = Voxell.NLP.Tools.Coreference.Mention.MentionContext;
 using System.Collections.Generic;
-namespace VoxellNLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Tools.Coreference.Resolver
 {
   
   /// <summary> Resolves pronouns specific to quoted speech such as "you", "me", and "I".  </summary>

@@ -1,4 +1,4 @@
-﻿namespace VoxellNLP.Stem
+﻿namespace Voxell.NLP.Stem
 {
   /// <summary>
   /// Stemmer is used to remove morphological affixes from words, leaving only the word stem.

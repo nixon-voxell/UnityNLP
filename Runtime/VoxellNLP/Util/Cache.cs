@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the Cache.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 //Copyright (C) 2003 Jeremy LaCivita and Thomas Morton
 //
@@ -38,7 +38,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace VoxellNLP.Tools.Util
+namespace Voxell.NLP.Tools.Util
 {
   /// <summary>
   ///  Provides fixed size, pre-allocated, least recently used replacement cache.

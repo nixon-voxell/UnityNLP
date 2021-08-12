@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the TokenizerME.java source file found in the
-//original java implementation of VoxellNLP.  That source file contains the following header:
+//original java implementation of Voxell.NLP.  That source file contains the following header:
 
 // Copyright (C) 2002 Jason Baldridge, Gann Bierner, and Tom Morton
 //
@@ -36,7 +36,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace VoxellNLP.Tools.Tokenize
+namespace Voxell.NLP.Tools.Tokenize
 {
   /// <summary>
   /// A Tokenizer for converting raw text into separated tokens.  It uses

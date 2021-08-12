@@ -15,12 +15,12 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the POSTagger.java source file found in the
-//original java implementation of VoxellNLP. 
+//original java implementation of Voxell.NLP. 
 
 using System;
 using System.Collections;
 
-namespace VoxellNLP.Tools.PosTagger
+namespace Voxell.NLP.Tools.PosTagger
 {
   /// <summary> 
   /// The interface for part of speech taggers.
