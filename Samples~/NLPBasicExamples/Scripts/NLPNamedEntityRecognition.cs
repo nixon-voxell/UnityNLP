@@ -1,5 +1,5 @@
 using UnityEngine;
-using OpenNLP.Tools.NameFind;
+using VoxellNLP.Tools.NameFind;
 using Voxell.Inspector;
 using Voxell;
 

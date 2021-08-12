@@ -1,5 +1,5 @@
 using UnityEngine;
-using OpenNLP.Tools.Tokenize;
+using VoxellNLP.Tools.Tokenize;
 using Voxell.Inspector;
 using Voxell;
 
