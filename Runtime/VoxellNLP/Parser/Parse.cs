@@ -39,7 +39,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Runtime.Serialization;
 
-namespace Voxell.NLP.Tools.Parser
+namespace Voxell.NLP.Parser
 {
 
   /// <summary>

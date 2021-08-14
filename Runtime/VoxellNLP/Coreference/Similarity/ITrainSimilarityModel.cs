@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Coreference.Similarity
+namespace Voxell.NLP.Coreference.Similarity
 {
   /// <summary> 
     /// Interface for training a similarity, gender, or number model. 

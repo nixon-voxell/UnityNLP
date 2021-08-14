@@ -36,7 +36,7 @@
 using System;
 using System.Collections;
 
-namespace Voxell.NLP.Tools.PosTagger
+namespace Voxell.NLP.PosTagger
 {
   /// <summary> 
   /// The interface for a context generator for the POS Tagger.

@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Coreference.Mention
+namespace Voxell.NLP.Coreference.Mention
 {
   /// <summary>
     /// Data structure representation of a mention with additional contextual information.  The contextual

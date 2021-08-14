@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.PosTagger
+namespace Voxell.NLP.PosTagger
 {
   /// <summary>
   /// A part of speech tagger that uses a model trained on English data from the
@@ -56,7 +56,7 @@ namespace Voxell.NLP.Tools.PosTagger
     public EnglishMaximumEntropyPosTagger(string modelFile) : base(GetModel(modelFile), new DefaultPosContextGenerator())
     {
     }
-    
+
     private static SharpEntropy.IMaximumEntropyModel GetModel(string name)
     {
       return new SharpEntropy.GisModel(new SharpEntropy.IO.BinaryGisModelReader(name));

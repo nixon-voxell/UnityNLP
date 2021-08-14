@@ -36,12 +36,12 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.NameFind
+namespace Voxell.NLP.NameFind
 {
   /// <summary>
   /// Context generator for the name find tool.
   /// </summary>
-  public interface INameContextGenerator : Voxell.NLP.Tools.Util.IBeamSearchContextGenerator
+  public interface INameContextGenerator : Voxell.NLP.Util.IBeamSearchContextGenerator
   {  
     /// <summary>
     /// Returns the contexts for chunking of the specified index.

@@ -37,13 +37,13 @@ using System;
 using System.Text;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Coreference
+namespace Voxell.NLP.Coreference
 {
   /// <summary>
     /// Represents an item in which can be put into the discourse model.  Object which are
   /// to be placed in the discourse model should extend this class.
   /// </summary>
-  /// <seealso cref="Voxell.NLP.Tools.Coreference.DiscourseModel">
+  /// <seealso cref="Voxell.NLP.Coreference.DiscourseModel">
   /// </seealso>
   public abstract class DiscourseElement
   {

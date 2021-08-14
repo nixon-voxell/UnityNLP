@@ -38,7 +38,7 @@ using System.Collections.Generic;
 using SharpWordNet;
 using SharpWordNet.Morph;
 
-namespace Voxell.NLP.Tools.Coreference.Mention
+namespace Voxell.NLP.Coreference.Mention
 {
   /// <summary> 
     /// An implementation of the Dictionary interface using the SharpWordnet library. </summary>

@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.SentenceDetect
+namespace Voxell.NLP.SentenceDetect
 {
   /// <summary>
   /// A sentence detector for splitting up raw text into sentences.  A maximum

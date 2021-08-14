@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Coreference.Mention
+namespace Voxell.NLP.Coreference.Mention
 {
   /// <summary>
     /// Finds mentions from Penn Treebank style parses.

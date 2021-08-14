@@ -20,7 +20,7 @@
 using System;
 using System.Collections;
 
-namespace Voxell.NLP.Tools.Chunker
+namespace Voxell.NLP.Chunker
 {
   /// <summary>
   /// Context generator interface for chunkers.

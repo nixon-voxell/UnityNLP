@@ -36,11 +36,11 @@
 using System;
 //UPGRADE_TODO: The type 'java.util.regex.Pattern' could not be found. If it was not included in the conversion, there may be compiler issues. "ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?index='!DefaultContextWindowIndex'&keyword='jlca1262'"
 using System.Text.RegularExpressions;
-using DiscourseEntity = Voxell.NLP.Tools.Coreference.DiscourseEntity;
-using Linker = Voxell.NLP.Tools.Coreference.ILinker;
-using MentionContext = Voxell.NLP.Tools.Coreference.Mention.MentionContext;
+using DiscourseEntity = Voxell.NLP.Coreference.DiscourseEntity;
+using Linker = Voxell.NLP.Coreference.ILinker;
+using MentionContext = Voxell.NLP.Coreference.Mention.MentionContext;
 using System.Collections.Generic;
-namespace Voxell.NLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Coreference.Resolver
 {
   
   /// <summary> This class resolver singlular pronouns such as "he", "she", "it" and their various forms. </summary>

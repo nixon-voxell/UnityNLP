@@ -53,7 +53,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.PosTagger
+namespace Voxell.NLP.PosTagger
 {
   /// <summary> 
   /// An event generator for the maxent POS Tagger.

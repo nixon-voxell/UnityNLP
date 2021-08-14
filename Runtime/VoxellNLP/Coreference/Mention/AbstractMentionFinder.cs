@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Coreference.Mention
+namespace Voxell.NLP.Coreference.Mention
 {
   /// <summary>
     /// Provides default implementation of many of the methods in the IMentionFinder interface.
@@ -269,7 +269,7 @@ namespace Voxell.NLP.Tools.Coreference.Mention
         }
         if (token.SyntacticType.StartsWith("PRP") && IsHandledPronoun(token.ToString()))
         {
-          Mention possessivePronounExtent = new Mention(token.Span, token.Span, token.EntityId, null, Voxell.NLP.Tools.Coreference.Linker.PronounModifier);
+          Mention possessivePronounExtent = new Mention(token.Span, token.Span, token.EntityId, null, Voxell.NLP.Coreference.Linker.PronounModifier);
           //System.err.println("AbstractEntityFinder.collectPossesivePronouns: adding possesive pronoun: "+tok+" "+tok.getEntityId());
           entities.Add(possessivePronounExtent);
           //System.err.println("AbstractMentionFinder: adding pos-pro: "+ppExtent);

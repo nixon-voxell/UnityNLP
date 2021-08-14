@@ -28,39 +28,31 @@ namespace Voxell.NLP.Stem
   /// </summary>
   public class RegexStemmer : IStemmer
   {
-    static string _pattern;
-    public static string PATTERN => GetPattern();
+    private string _pattern;
+    private Regex _regex;
+    private Dictionary<string, string> replacements = new Dictionary<string, string>();
 
-    static Regex _regex;
-
-    static Dictionary<string, string> replacements = new Dictionary<string, string>();
-
-    private static string GetPattern()
+    public void CreatePattern(string pattern=null)
     {
       if (string.IsNullOrEmpty(_pattern))
       {
-        replacements["nning"] = "n"; // running
-        replacements["pping"] = "p"; // skipping
-        replacements["tting"] = "t"; // putting
-        replacements["able"] = "";
-        replacements["were"] = "be";
-        replacements["sses"] = "ss";
-        replacements["ies"] = "i";
-        replacements["are"] = "be";
-        replacements["ing"] = "";
+        // replacements["nning"] = "n"; // running
+        // replacements["pping"] = "p"; // skipping
+        // replacements["tting"] = "t"; // putting
+        // replacements["ing"] = "";
         replacements["am"] = "be";
-        replacements["es"] = "";
         replacements["is"] = "be";
-        replacements["s"] = "";
+        replacements["are"] = "be";
+        replacements["was"] = "be";
+        replacements["were"] = "be";
 
         _pattern = string.Join("$|", replacements.Keys) + "$";
-        _regex = new Regex(_pattern);
       }
 
-      return _pattern;
+      _regex = new Regex(_pattern);
     }
 
-    public string Stem(string word, StemOptions options)
+    public string Stem(string word)
     {
       Match match = _regex.Matches(word).Cast<Match>().FirstOrDefault();
       return match == null ? word : word.Substring(0, match.Index) + replacements[match.Value];

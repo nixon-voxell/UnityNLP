@@ -35,7 +35,7 @@
 
 using System.Configuration;
 
-namespace Voxell.NLP.Tools.Coreference.Mention
+namespace Voxell.NLP.Coreference.Mention
 {
   /// <summary>
   /// Factory class used to get an instance of a dictionary object.

@@ -16,11 +16,11 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Util
+namespace Voxell.NLP.Util
 {
   /// <summary>
   /// Class providing simple tokenization of a string, for manipulation.  
-  /// For NLP tokenizing, see the Voxell.NLP.Tools.Tokenize namespace.
+  /// For NLP tokenizing, see the Voxell.NLP.Tokenize namespace.
   /// </summary>
   public class StringTokenizer
   {

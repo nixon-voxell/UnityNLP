@@ -34,10 +34,10 @@
 //Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 using System;
-using DiscourseEntity = Voxell.NLP.Tools.Coreference.DiscourseEntity;
-using DiscourseModel = Voxell.NLP.Tools.Coreference.DiscourseModel;
-using MentionContext = Voxell.NLP.Tools.Coreference.Mention.MentionContext;
-namespace Voxell.NLP.Tools.Coreference.Resolver
+using DiscourseEntity = Voxell.NLP.Coreference.DiscourseEntity;
+using DiscourseModel = Voxell.NLP.Coreference.DiscourseModel;
+using MentionContext = Voxell.NLP.Coreference.Mention.MentionContext;
+namespace Voxell.NLP.Coreference.Resolver
 {
   
   /// <summary> Resolver used in training to update the discourse model based on the coreference annotation.  </summary>

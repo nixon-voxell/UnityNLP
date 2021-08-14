@@ -35,7 +35,7 @@
 using System;
 using System.Collections;
 
-namespace Voxell.NLP.Tools.Chunker
+namespace Voxell.NLP.Chunker
 {
   /// <summary>
   /// This class represents a maximum-entropy-based chunker.  Such a chunker can be used to

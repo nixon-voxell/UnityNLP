@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Coreference.Resolver
 {
   /// <summary>
     /// Resolves coreference between common nouns.

@@ -37,9 +37,9 @@ using System;
 using System.Text.RegularExpressions;
 using System.Collections;
 using System.Collections.Generic;
-using Voxell.NLP.Tools.Util;
+using Voxell.NLP.Util;
 
-namespace Voxell.NLP.Tools.NameFind
+namespace Voxell.NLP.NameFind
 {
   /// <summary>
   /// Class for determining contextual features for a tag/chunk style named-entity recognizer.

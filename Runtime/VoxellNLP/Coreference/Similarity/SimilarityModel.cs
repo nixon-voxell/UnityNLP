@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Coreference.Similarity
+namespace Voxell.NLP.Coreference.Similarity
 {
   /// <summary>
     /// Models semantic similarity between two mentions and returns a score based on 

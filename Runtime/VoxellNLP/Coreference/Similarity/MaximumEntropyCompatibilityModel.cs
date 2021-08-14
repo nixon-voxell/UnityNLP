@@ -19,7 +19,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Coreference.Similarity
+namespace Voxell.NLP.Coreference.Similarity
 {
   public class MaximumEntropyCompatibilityModel
   {

@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.SentenceDetect
+namespace Voxell.NLP.SentenceDetect
 {
   /// <summary>
   /// An Event which can hold a pointer to another Event for use in a

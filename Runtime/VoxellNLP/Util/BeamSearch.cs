@@ -36,7 +36,7 @@
 using System;
 using System.Collections;
 
-namespace Voxell.NLP.Tools.Util
+namespace Voxell.NLP.Util
 {
   /// <summary>
   /// Performs k-best search over sequence.  This is besed on the description in

@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Util
+namespace Voxell.NLP.Util
 {
   /// <summary>
   /// This class implements the heap interface using a generic List as the underlying

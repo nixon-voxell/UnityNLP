@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Util
+namespace Voxell.NLP.Util
 {
   /// <summary>
     /// Class which creates mapping between keys and a list of values.

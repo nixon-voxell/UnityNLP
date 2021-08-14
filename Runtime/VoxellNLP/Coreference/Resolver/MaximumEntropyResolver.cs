@@ -37,7 +37,7 @@ using System;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Coreference.Resolver
 {
   /// <summary> 
     /// Provides common functionality used by classes which implement the {@link IResolver} interface
@@ -910,7 +910,7 @@ namespace Voxell.NLP.Tools.Coreference.Resolver
       bool noTheModifiersMatch = false;
             List<string> features = new List<string>();
             Mention.IParse[] mentionTokens = mention.TokenParses;
-      Voxell.NLP.Tools.Util.Set<string> entityContextModifierSet = ConstructModifierSet(mentionTokens, mention.HeadTokenIndex);
+      Voxell.NLP.Util.Set<string> entityContextModifierSet = ConstructModifierSet(mentionTokens, mention.HeadTokenIndex);
       string mentionHeadString = mention.HeadTokenText.ToLower();
       Util.Set<string> featureSet = new Util.HashSet<string>();
 

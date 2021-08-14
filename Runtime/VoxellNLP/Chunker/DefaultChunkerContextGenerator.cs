@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Chunker
+namespace Voxell.NLP.Chunker
 {
   /// <summary>
   /// Features based on chunking model described in Fei Sha and Fernando Pereira. Shallow 

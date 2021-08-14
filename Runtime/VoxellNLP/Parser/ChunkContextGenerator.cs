@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Parser
+namespace Voxell.NLP.Parser
 {
   /// <summary>
   /// Creates predictive context for the pre-chunking phases of parsing.

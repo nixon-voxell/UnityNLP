@@ -35,9 +35,9 @@
 
 using System;
 using System.Collections;
-using Voxell.NLP.Tools.Util;
+using Voxell.NLP.Util;
 
-namespace Voxell.NLP.Tools.NameFind
+namespace Voxell.NLP.NameFind
 {
   /// <summary>
   /// Class for creating a maximum-entropy-based name finder.

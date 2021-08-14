@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Coreference.Mention
+namespace Voxell.NLP.Coreference.Mention
 {
   /// <summary>
     /// Interface for finding head words in noun phrases and head noun-phrases in parses.

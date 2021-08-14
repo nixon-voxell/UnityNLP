@@ -38,7 +38,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Voxell.NLP.Tools.Util
+namespace Voxell.NLP.Util
 {
   /// <summary>
   ///  Provides fixed size, pre-allocated, least recently used replacement cache.

@@ -20,7 +20,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Coreference.Resolver
 {
     /// <summary> 
     /// Default implementation of the {@link INonReferentialResolver} interface.

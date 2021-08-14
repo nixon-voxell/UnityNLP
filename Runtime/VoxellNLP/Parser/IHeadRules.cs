@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Parser
+namespace Voxell.NLP.Parser
 {
   /// <summary>
   /// Interface for encoding the head rules associated with parsing.

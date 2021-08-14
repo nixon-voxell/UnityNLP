@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Coreference.Resolver
 {
   /// <summary>
     /// Default implementation of some methods in the {@link IResolver} interface.

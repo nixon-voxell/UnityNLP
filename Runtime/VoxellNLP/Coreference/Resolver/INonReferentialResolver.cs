@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Coreference.Resolver
 {
   /// <summary>
     /// Provides the interface for a object to provide a resolver with a non-referential

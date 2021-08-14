@@ -34,8 +34,8 @@
 //Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 using System;
-using MentionContext = Voxell.NLP.Tools.Coreference.Mention.MentionContext;
-namespace Voxell.NLP.Tools.Coreference.Resolver
+using MentionContext = Voxell.NLP.Coreference.Mention.MentionContext;
+namespace Voxell.NLP.Coreference.Resolver
 {
   
   /// <summary> Implementation of non-referential classifier which uses a fixed-value threshold. </summary>

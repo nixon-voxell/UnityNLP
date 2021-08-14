@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Util
+namespace Voxell.NLP.Util
 {
   /// <summary>
   /// Inteface for interacting with a Heap data structure.

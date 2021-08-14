@@ -37,7 +37,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Voxell.NLP.Tools.PosTagger
+namespace Voxell.NLP.PosTagger
 {
   /// <summary>
   /// Class that helps generate part-of-speech lookup list files.

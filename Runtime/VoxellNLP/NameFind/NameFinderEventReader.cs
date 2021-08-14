@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.NameFind
+namespace Voxell.NLP.NameFind
 {
   /// <summary>
   /// Class for creating a training event reader out of data files for training a name finder.

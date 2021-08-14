@@ -37,7 +37,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Voxell.NLP.Tools.Parser
+namespace Voxell.NLP.Parser
 {
   /// <summary>
   /// Class for a shift reduce style parser based on Adwait Ratnaparki's 1998 thesis.

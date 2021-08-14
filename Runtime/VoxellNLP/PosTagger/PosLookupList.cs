@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.PosTagger
+namespace Voxell.NLP.PosTagger
 {
   /// <summary>
   /// Provides a means of determining which tags are valid for a particular word based on a tag dictionary read from a file.

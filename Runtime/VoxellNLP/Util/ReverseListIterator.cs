@@ -34,7 +34,7 @@
 //Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 using System;
-namespace Voxell.NLP.Tools.Util
+namespace Voxell.NLP.Util
 {
   
   /// <summary> An iterator for a list which returns values in the opposite order as the typical list iterator.</summary>

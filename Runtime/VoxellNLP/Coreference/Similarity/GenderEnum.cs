@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Coreference.Similarity
+namespace Voxell.NLP.Coreference.Similarity
 {
   /// <summary>
     /// Enumeration of gender types.

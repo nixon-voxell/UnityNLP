@@ -11,14 +11,16 @@
   "license": "GPL v3.0",
   "unity": "2019.4",
   "unityRelease": "0f1",
-  "version": "1.0.0",
-  "dependencies": {
-  },
+  "version": "1.1.0",
   "samples": [
     {
       "displayName": "NLP Bsaic Examples",
       "description": "Some example scripts to go through the basics of this package.",
       "path": "Samples~/NLPBasicExamples"
     }
-  ]
+  ],
+  "dependencies": {
+    "voxell.util": "1.1.0",
+    "voxell.ai": "1.0.0"
+  }
 }

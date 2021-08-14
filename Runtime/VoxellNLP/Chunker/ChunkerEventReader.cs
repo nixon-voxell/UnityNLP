@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Chunker
+namespace Voxell.NLP.Chunker
 {
   /// <summary> 
   /// Class for creating an event reader out of data files for training a chunker. 

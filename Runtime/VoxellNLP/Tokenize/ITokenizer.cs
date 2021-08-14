@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Tokenize
+namespace Voxell.NLP.Tokenize
 {
   /// <summary> 
   /// The interface for tokenizers, which turn messy text into nicely segmented

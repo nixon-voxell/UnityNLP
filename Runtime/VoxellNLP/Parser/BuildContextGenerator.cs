@@ -37,7 +37,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Voxell.NLP.Tools.Parser
+namespace Voxell.NLP.Parser
 {
   /// <summary>
   /// Class to generator predictive contexts for deciding how constituents should be combined together.

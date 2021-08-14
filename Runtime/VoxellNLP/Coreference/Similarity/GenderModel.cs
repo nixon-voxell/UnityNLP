@@ -37,7 +37,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Coreference.Similarity
+namespace Voxell.NLP.Coreference.Similarity
 {
   /// <summary>
     /// Class which models the gender of a particular mentions and entities made up of mentions.

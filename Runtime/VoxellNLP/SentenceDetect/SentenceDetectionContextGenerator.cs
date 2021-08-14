@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.SentenceDetect
+namespace Voxell.NLP.SentenceDetect
 {
   /// <summary> 
   /// Generate event contexts for maxent decisions for sentence detection.

@@ -10,9 +10,6 @@
     /// <summary>
     /// Strip affixes from the token and return the stem.
     /// </summary>
-    /// <param name="word"></param>
-    /// <param name="options"></param>
-    /// <returns></returns>
-    string Stem(string word, StemOptions options);
+    string Stem(string word);
   }
 }

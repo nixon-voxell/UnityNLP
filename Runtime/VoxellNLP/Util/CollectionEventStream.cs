@@ -36,7 +36,7 @@
 using System;
 using System.Collections;
 
-namespace Voxell.NLP.Tools.Util
+namespace Voxell.NLP.Util
 {
   /// <summary>
     /// Creates an event stream out of a collection of events.

@@ -34,11 +34,11 @@
 //Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 using System;
-using Voxell.NLP.Tools.Coreference.Mention;
-using Voxell.NLP.Tools.Coreference.Resolver;
-using Voxell.NLP.Tools.Coreference.Similarity;
+using Voxell.NLP.Coreference.Mention;
+using Voxell.NLP.Coreference.Resolver;
+using Voxell.NLP.Coreference.Similarity;
 
-namespace Voxell.NLP.Tools.Coreference
+namespace Voxell.NLP.Coreference
 {
   /// <summary>
     /// Provides a default implementation of many of the methods in <code>ILinker</code> that

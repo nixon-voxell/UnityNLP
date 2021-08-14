@@ -1,15 +1,26 @@
 # Unity NLP
 
-This package is still under development. [OpenNLP](https://archive.codeplex.com/?p=sharpnlp) is used as the backend of this package. If you work with C# only, I recommend you use use this [repository](https://github.com/AlexPoint/OpenNlp) instead.
+This package references 2 repositories, [OpenNLP](https://github.com/AlexPoint/OpenNlp) and [CherubNLP](https://github.com/SciSharp/CherubNLP). UnityNLP is a collection of natural language processing tools written in C#. Currently it provides the following NLP tools:
+- [x] sentence splitter
+- [x] tokenizer
+- [x] part-of-speech tagger
+- [x] chunker (used to "find non-recursive syntactic annotations such as noun phrase chunks")
+- [x] parser
+- [x] name finder
+- [x] coreference tool
+- [x] interface to the WordNet lexical database
+- [x] topical classifier
 
+## Table of contents
 - [Unity NLP](#unity-nlp)
+  - [Table of contents](#table-of-contents)
   - [Installation](#installation)
-  - [OpenNLP](#opennlp)
-- [Examples](#examples)
-  - [Tokenizer](#tokenizer)
-  - [Sentence Splitter](#sentence-splitter)
-  - [Part of Speech](#part-of-speech)
-  - [Named Entity Recognition](#named-entity-recognition)
+  - [Examples](#examples)
+    - [Tokenizer](#tokenizer)
+    - [Sentence Splitter](#sentence-splitter)
+    - [Part of Speech](#part-of-speech)
+    - [Named Entity Recognition](#named-entity-recognition)
+    - [Multinomial Naive Bayes Classifier](#multinomial-naive-bayes-classifier)
   - [Support the project!](#support-the-project)
   - [Join the community!](#join-the-community)
   - [License](#license)
@@ -17,46 +28,42 @@ This package is still under development. [OpenNLP](https://archive.codeplex.com/
 
 ## Installation
 
-1. Clone this repository into your Packages folder.
-2. Download all [essential models](https://drive.google.com/file/d/19bD2h0LBIArczYtQMHuoqdNRuUZrWdOX/view?usp=sharing) and import them into the project.
-3. Place the models in the StreamingAssets folder.
-4. And you are ready to go!
+This package depends on the [UnityUtil](https://github.com/voxell-tech/UnityUtil) package and the [UnityAI](https://github.com/voxell-tech/UnityAI) package.
 
-## OpenNLP
-
-OpenNLP is a collection of natural language processing tools written in C#. Currently it provides the following NLP tools:
-- sentence splitter
-- tokenizer
-- part-of-speech tagger
-- chunker (used to "find non-recursive syntactic annotations such as noun phrase chunks")
-- parser
-- name finder
-- coreference tool
-- interface to the WordNet lexical database
+1. Clone the [UnityUtil](https://github.com/voxell-tech/UnityUtil) repository into your `Packages` folder.
+2. Clone the [UnityAI](https://github.com/voxell-tech/UnityAI) repository into your `Packages` folder.
+3. Clone this repository into your Packages folder.
+4. Download all [essential models](https://drive.google.com/file/d/19bD2h0LBIArczYtQMHuoqdNRuUZrWdOX/view?usp=sharing) and import them into the project.
+5. Place the models in the StreamingAssets folder.
+6. And you are ready to go!
 
 *Make a feature request in the issues tab if you think there is something missing or if you have new ideas!*
 
-# Examples
+## Examples
 
-The examples below utilizes the [UnityUtil](https://github.com/voxell-tech/UnityUtil) package. This package is not dependent on UnityUtil, but if you want to follow along the examples and import the samples, it is recommended to install UnityUtil. All the sample code are in the `Samples~` folder which can be imported into unity from the package manager.
+All the sample code are in the `Samples~` folder which can be imported into unity from the package manager.
 
-## Tokenizer
+### Tokenizer
 
 ![Tokenize](Pictures~/TokenizerExample.png)
 
-## Sentence Splitter
+### Sentence Splitter
 
 ![SentenceSplitter](Pictures~/SentenceSplitterExample.png)
 
-## Part of Speech
+### Part of Speech
 
 For the full list of part of speech abbreviations, please refer to the [Penn Treebank Project](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html).
 
 ![POS](Pictures~/POSTaggerExample.png)
 
-## Named Entity Recognition
+### Named Entity Recognition
 
 ![NER](Pictures~/NamedEntityRecognitionExample.png)
+
+### Multinomial Naive Bayes Classifier
+
+![NBClassifier](Pictures~/MultinomialNaiveBayesClassifierExample.png)
 
 ## Support the project!
 
@@ -83,5 +90,6 @@ See [license file](./LICENSE) for details.
 
 ## References
 
-- [SharpNLP](https://archive.codeplex.com/?p=sharpnlp)
-- [OpenNLP Repository](https://github.com/AlexPoint/OpenNlp)
+- [SharpNLP archive](https://archive.codeplex.com/?p=sharpnlp)
+- [OpenNLP](https://github.com/AlexPoint/OpenNlp)
+- [CherubNLP](https://github.com/SciSharp/CherubNLP)

@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Util
+namespace Voxell.NLP.Util
 {
   /// <summary>Represents a weighted sequence of outcomes. </summary>
   public class Sequence : System.IComparable

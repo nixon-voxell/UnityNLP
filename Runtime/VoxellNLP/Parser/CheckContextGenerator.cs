@@ -37,7 +37,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Voxell.NLP.Tools.Parser
+namespace Voxell.NLP.Parser
 {
   /// <summary>
   /// Class for generating predictive context for deciding when a constituent is complete.

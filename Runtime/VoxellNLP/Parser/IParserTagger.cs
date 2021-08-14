@@ -36,7 +36,7 @@
 using System;
 using System.Collections;
 
-namespace Voxell.NLP.Tools.Parser
+namespace Voxell.NLP.Parser
 {
   /// <summary>
   /// Interface that a pos-tagger used by the parser must implement.

@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.SentenceDetect
+namespace Voxell.NLP.SentenceDetect
 {
   /// <summary> 
   /// The interface for sentence detectors, which find the sentence boundaries in

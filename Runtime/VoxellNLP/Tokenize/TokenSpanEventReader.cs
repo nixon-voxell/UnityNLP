@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Tokenize
+namespace Voxell.NLP.Tokenize
 {
   /// <summary>
   /// An implementation of ITrainingEventReader which allows events to be added by 

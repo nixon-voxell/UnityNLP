@@ -36,7 +36,7 @@
 using System;
 using System.Collections;
 
-namespace Voxell.NLP.Tools.NameFind
+namespace Voxell.NLP.NameFind
 {
   /// <summary>
   /// The interface for name finders which provide name tags for a sequence of tokens.

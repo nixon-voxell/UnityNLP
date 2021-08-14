@@ -37,9 +37,9 @@ using System;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 
-using DiscourseEntity = Voxell.NLP.Tools.Coreference.DiscourseEntity;
-using MentionContext = Voxell.NLP.Tools.Coreference.Mention.MentionContext;
-namespace Voxell.NLP.Tools.Coreference.Resolver
+using DiscourseEntity = Voxell.NLP.Coreference.DiscourseEntity;
+using MentionContext = Voxell.NLP.Coreference.Mention.MentionContext;
+namespace Voxell.NLP.Coreference.Resolver
 {
   
   /// <summary>  Resolves coreference between appositives. </summary>

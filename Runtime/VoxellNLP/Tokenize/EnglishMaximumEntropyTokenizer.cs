@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Tokenize
+namespace Voxell.NLP.Tokenize
 {
   /// <summary> 
   /// A tokenizer which uses default English data for the maximum entropy model.

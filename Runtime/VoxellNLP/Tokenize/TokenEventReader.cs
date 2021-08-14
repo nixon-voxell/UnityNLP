@@ -37,7 +37,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Voxell.NLP.Tools.Tokenize
+namespace Voxell.NLP.Tokenize
 {
   /// <summary>
   /// Generate event contexts for maxent decisions for tokenization detection.

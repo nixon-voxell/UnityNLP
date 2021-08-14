@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.SentenceDetect
+namespace Voxell.NLP.SentenceDetect
 {
   /// <summary>
   /// An implementation of ITrainingEventReader which assumes that it is receiving

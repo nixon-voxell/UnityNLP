@@ -36,7 +36,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace Voxell.NLP.Tools.Tokenize
+namespace Voxell.NLP.Tokenize
 {
   /// <summary>
   /// A Tokenizer for converting raw text into separated tokens.  It uses

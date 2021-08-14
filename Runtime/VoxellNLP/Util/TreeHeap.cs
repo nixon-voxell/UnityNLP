@@ -19,7 +19,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Util
+namespace Voxell.NLP.Util
 {
   /// <summary>
   /// An implemention of the heap interface based on SortedSet.

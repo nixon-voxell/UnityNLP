@@ -36,7 +36,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace Voxell.NLP.Tools.PosTagger
+namespace Voxell.NLP.PosTagger
 {
   /// <summary> 
   /// A context generator for the POS Tagger.

@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Util
+namespace Voxell.NLP.Util
 {
   /// <summary>
   /// Class for storing start and end integer offsets.  

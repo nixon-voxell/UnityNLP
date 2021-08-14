@@ -37,11 +37,11 @@ using System;
 //UPGRADE_TODO: The type 'java.util.regex.Pattern' could not be found. If it was not included in the conversion, there may be compiler issues. "ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?index='!DefaultContextWindowIndex'&keyword='jlca1262'"
 //using Pattern = java.util.regex.Pattern;
 using System.Text.RegularExpressions;
-using HeadFinder = Voxell.NLP.Tools.Coreference.Mention.IHeadFinder;
-using Mention = Voxell.NLP.Tools.Coreference.Mention.Mention;
-using MentionContext = Voxell.NLP.Tools.Coreference.Mention.MentionContext;
-using MentionFinder = Voxell.NLP.Tools.Coreference.Mention.IMentionFinder;
-namespace Voxell.NLP.Tools.Coreference
+using HeadFinder = Voxell.NLP.Coreference.Mention.IHeadFinder;
+using Mention = Voxell.NLP.Coreference.Mention.Mention;
+using MentionContext = Voxell.NLP.Coreference.Mention.MentionContext;
+using MentionFinder = Voxell.NLP.Coreference.Mention.IMentionFinder;
+namespace Voxell.NLP.Coreference
 {
   
   public class Linker

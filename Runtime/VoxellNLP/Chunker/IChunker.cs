@@ -36,7 +36,7 @@
 using System;
 using System.Collections;
 
-namespace Voxell.NLP.Tools.Chunker
+namespace Voxell.NLP.Chunker
 {
   /// <summary>
   /// The interface for chunkers which provide chunk tags for a sequence of tokens.

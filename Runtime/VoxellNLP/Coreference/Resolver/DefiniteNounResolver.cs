@@ -34,11 +34,11 @@
 //Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 using System;
-using DiscourseEntity = Voxell.NLP.Tools.Coreference.DiscourseEntity;
-using MentionContext = Voxell.NLP.Tools.Coreference.Mention.MentionContext;
-using Parse = Voxell.NLP.Tools.Coreference.Mention.IParse;
+using DiscourseEntity = Voxell.NLP.Coreference.DiscourseEntity;
+using MentionContext = Voxell.NLP.Coreference.Mention.MentionContext;
+using Parse = Voxell.NLP.Coreference.Mention.IParse;
 using System.Collections.Generic;
-namespace Voxell.NLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Coreference.Resolver
 {
   
   /// <summary> Resolves coreference between definite noun-phrases. </summary>

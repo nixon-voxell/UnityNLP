@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Parser
+namespace Voxell.NLP.Parser
 {
   /// <summary>
   ///  Enumerated type of event types for the parser. 
@@ -58,7 +58,7 @@ namespace Voxell.NLP.Tools.Parser
     private BuildContextGenerator mBuildContextGenerator;
     private CheckContextGenerator mCheckContextGenerator;
     private ChunkContextGenerator mChunkContextGenerator;
-    private Voxell.NLP.Tools.PosTagger.IPosContextGenerator mPosContextGenerator;
+    private Voxell.NLP.PosTagger.IPosContextGenerator mPosContextGenerator;
     private SharpEntropy.ITrainingDataReader<string> mDataReader;
     private SharpEntropy.TrainingEvent[] mEvents;
     private int mEventIndex;

@@ -36,7 +36,7 @@
 using SharpWordNet;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Coreference.Mention
+namespace Voxell.NLP.Coreference.Mention
 {
   
   /// <summary> An implementation of the Dictionary interface using the JWNL library. </summary>

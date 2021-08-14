@@ -37,7 +37,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Parser
+namespace Voxell.NLP.Parser
 {
   /// <summary> 
   /// Class for storing the English head rules associated with parsing. 

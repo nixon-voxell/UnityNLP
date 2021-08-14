@@ -1,12 +1,11 @@
 using UnityEngine;
-using Voxell.NLP.Tools.Tokenize;
-using Voxell.Inspector;
 using Voxell;
+using Voxell.NLP.Tokenize;
+using Voxell.Inspector;
 
 public class NLPTokenizer : MonoBehaviour
 {
-  [StreamingAssetFilePath]
-  public string tokenizerModel;
+  [StreamingAssetFilePath] public string tokenizerModel;
   [TextArea(1, 5)] public string sentence;
   public string[] tokens;
 

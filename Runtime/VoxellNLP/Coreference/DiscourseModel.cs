@@ -36,7 +36,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Coreference
+namespace Voxell.NLP.Coreference
 {
   /// <summary>
     /// Represents the elements which are part of a discourse.

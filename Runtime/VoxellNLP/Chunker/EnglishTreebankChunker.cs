@@ -37,7 +37,7 @@ using System;
 using System.Collections;
 using System.Text;
 
-namespace Voxell.NLP.Tools.Chunker
+namespace Voxell.NLP.Chunker
 {
   /// <summary>
   /// This is a chunker based on the CONLL chunking task which uses Penn Treebank constituents as the basis for the chunks.

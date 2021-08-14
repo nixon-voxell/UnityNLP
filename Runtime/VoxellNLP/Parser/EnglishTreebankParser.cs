@@ -37,7 +37,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Voxell.NLP.Tools.Parser
+namespace Voxell.NLP.Parser
 {
   /// <summary>
   /// Class that wraps the MaximumEntropyParser to make it easy to perform full parses using the English Treebank
@@ -46,7 +46,7 @@ namespace Voxell.NLP.Tools.Parser
   public sealed class EnglishTreebankParser
   {
     MaximumEntropyParser mParser;
-    Voxell.NLP.Tools.Tokenize.EnglishMaximumEntropyTokenizer mTokenizer;
+    Voxell.NLP.Tokenize.EnglishMaximumEntropyTokenizer mTokenizer;
 
     public EnglishTreebankParser(string dataDirectory, bool useTagDictionary, bool useCaseSensitiveTagDictionary, int beamSize, double advancePercentage)
     {
@@ -72,7 +72,7 @@ namespace Voxell.NLP.Tools.Parser
 
       mParser = new MaximumEntropyParser(buildModel, checkModel, posTagger, chunker, headRules, beamSize, advancePercentage);
     
-      mTokenizer = new Voxell.NLP.Tools.Tokenize.EnglishMaximumEntropyTokenizer(dataDirectory + "EnglishTok.nbin");
+      mTokenizer = new Voxell.NLP.Tokenize.EnglishMaximumEntropyTokenizer(dataDirectory + "EnglishTok.nbin");
 
     }
     

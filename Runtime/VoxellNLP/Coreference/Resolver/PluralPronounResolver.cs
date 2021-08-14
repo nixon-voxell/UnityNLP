@@ -16,11 +16,11 @@
 //Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 //////////////////////////////////////////////////////////////////////////////
 using System;
-using DiscourseEntity = Voxell.NLP.Tools.Coreference.DiscourseEntity;
-using Linker = Voxell.NLP.Tools.Coreference.ILinker;
-using MentionContext = Voxell.NLP.Tools.Coreference.Mention.MentionContext;
+using DiscourseEntity = Voxell.NLP.Coreference.DiscourseEntity;
+using Linker = Voxell.NLP.Coreference.ILinker;
+using MentionContext = Voxell.NLP.Coreference.Mention.MentionContext;
 using System.Collections.Generic;
-namespace Voxell.NLP.Tools.Coreference.Resolver
+namespace Voxell.NLP.Coreference.Resolver
 {
   
   /// <summary> Resolves coreference between plural pronouns and their referents.</summary>

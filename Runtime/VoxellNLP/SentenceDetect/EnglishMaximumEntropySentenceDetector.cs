@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.SentenceDetect
+namespace Voxell.NLP.SentenceDetect
 {
   /// <summary>
   /// A sentence detector which uses a model trained on English data (Wall Street

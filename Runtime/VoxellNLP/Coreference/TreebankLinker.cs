@@ -35,13 +35,13 @@
 
 using System;
 using System.Collections.Generic;
-using Voxell.NLP.Tools.Coreference;
-using Voxell.NLP.Tools.Coreference.Mention;
-using Voxell.NLP.Tools.Parser;
+using Voxell.NLP.Coreference;
+using Voxell.NLP.Coreference.Mention;
+using Voxell.NLP.Parser;
 
 using System.Text;
 
-namespace Voxell.NLP.Tools.Lang.English
+namespace Voxell.NLP.Lang.English
 {
   /// <summary>
     /// This class perform coreference for treebank style parses.  

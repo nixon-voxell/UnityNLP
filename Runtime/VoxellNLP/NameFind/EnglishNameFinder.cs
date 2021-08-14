@@ -35,10 +35,10 @@
 
 using System.IO;
 using System.Collections.Generic;
-using Voxell.NLP.Tools.Util;
-using Voxell.NLP.Tools.Parser;
+using Voxell.NLP.Util;
+using Voxell.NLP.Parser;
 
-namespace Voxell.NLP.Tools.NameFind
+namespace Voxell.NLP.NameFind
 {
   /// <summary> Class is used to create a name finder for English.</summary>
   public class EnglishNameFinder 

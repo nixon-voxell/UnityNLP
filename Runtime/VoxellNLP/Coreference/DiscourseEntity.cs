@@ -35,7 +35,7 @@
 
 using System;
 
-namespace Voxell.NLP.Tools.Coreference
+namespace Voxell.NLP.Coreference
 {
   /// <summary>
     /// Represents an entity in a discourse model.
@@ -43,7 +43,7 @@ namespace Voxell.NLP.Tools.Coreference
   public class DiscourseEntity : DiscourseElement
   {
         private string mCategory;
-        private Voxell.NLP.Tools.Util.Set<string> mSynsets;
+        private Voxell.NLP.Util.Set<string> mSynsets;
         private Similarity.GenderEnum mGender;
         private double mGenderProbability;
         private Similarity.NumberEnum mNumber;

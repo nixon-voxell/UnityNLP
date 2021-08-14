@@ -36,16 +36,16 @@
 using System;
 using System.Collections.Generic;
 
-using NameFinder = Voxell.NLP.Tools.NameFind.EnglishNameFinder;
-using Parse = Voxell.NLP.Tools.Parser.Parse;
-using ParserME = Voxell.NLP.Tools.Parser.MaximumEntropyParser;
-using Span = Voxell.NLP.Tools.Util.Span;
-namespace Voxell.NLP.Tools.Coreference.Mention
+using NameFinder = Voxell.NLP.NameFind.EnglishNameFinder;
+using Parse = Voxell.NLP.Parser.Parse;
+using ParserME = Voxell.NLP.Parser.MaximumEntropyParser;
+using Span = Voxell.NLP.Util.Span;
+namespace Voxell.NLP.Coreference.Mention
 {
   
   /// <summary>
-    /// This class is a wrapper for {@link Voxell.NLP.Tools.Parser.Parse} mapping it to the API specified in
-    /// {@link Voxell.NLP.Tools.Coreference.Mention.Parse}.
+    /// This class is a wrapper for {@link Voxell.NLP.Parser.Parse} mapping it to the API specified in
+    /// {@link Voxell.NLP.Coreference.Mention.Parse}.
   /// This allows coreference to be done on the output of the parser.
   /// </summary>
   public class DefaultParse : AbstractParse
@@ -123,7 +123,7 @@ namespace Voxell.NLP.Tools.Coreference.Mention
         List<Parser.Parse> kids = new List<Parser.Parse>(mParse.GetChildren());
         while (kids.Count > 0)
         {
-                    Voxell.NLP.Tools.Parser.Parse currentParse = kids[0];
+                    Voxell.NLP.Parser.Parse currentParse = kids[0];
           kids.RemoveAt(0);
                     
           if (currentParse.IsPosTag)

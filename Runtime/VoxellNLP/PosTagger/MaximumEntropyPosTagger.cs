@@ -36,7 +36,7 @@
 using System;
 using System.Collections;
 
-namespace Voxell.NLP.Tools.PosTagger
+namespace Voxell.NLP.PosTagger
 {
   /// <summary>
   /// A part-of-speech tagger that uses maximum entropy.  Trys to predict whether
@@ -220,8 +220,8 @@ namespace Voxell.NLP.Tools.PosTagger
     
     public virtual string[] Tag(string[] tokens)
     {
-            mBestSequence = Beam.BestSequence(new ArrayList(tokens), null);
-            return mBestSequence.Outcomes.ToArray();
+      mBestSequence = Beam.BestSequence(new ArrayList(tokens), null);
+      return mBestSequence.Outcomes.ToArray();
     }
     
     public virtual void GetProbabilities(double[] probabilities)

@@ -20,7 +20,7 @@
 using System;
 using System.Collections;
 
-namespace Voxell.NLP.Tools.PosTagger
+namespace Voxell.NLP.PosTagger
 {
   /// <summary> 
   /// The interface for part of speech taggers.
@@ -37,7 +37,7 @@ namespace Voxell.NLP.Tools.PosTagger
     /// a list of pos tags for each token provided in sentence.
     /// </returns>
     ArrayList Tag(ArrayList tokens);
-      
+
     /// <summary>
     /// Assigns the sentence of tokens pos tags.</summary>
     /// <param name="tokens">
