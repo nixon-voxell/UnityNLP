@@ -20166,9 +20166,9 @@ MonoBehaviour:
   - with
   - you
   - your
-  sentenceToClassify: Are you aware of yourself?
-  classifiedLabel: SelfAware
-  highestConfidence: 0.2899328798392872
+  sentenceToClassify: Hi there!
+  classifiedLabel: Greeting
+  highestConfidence: 0.33014902944506386
 --- !u!1 &590650652
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,8 +1,8 @@
 # Unity NLP
 
-This package references 2 repositories, [OpenNLP](https://github.com/AlexPoint/OpenNlp) and [CherubNLP](https://github.com/SciSharp/CherubNLP). UnityNLP is a collection of natural language processing tools written in C#. Currently it provides the following NLP tools:
-- [x] sentence splitter
+This package references 2 repositories, [OpenNLP](https://github.com/AlexPoint/OpenNlp) and [CherubNLP](https://github.com/SciSharp/CherubNLP). UnityNLP is a collection of natural language processing tools written in C# that is targeted towards the Unity Engine. Currently it provides the following NLP tools:
 - [x] tokenizer
+- [x] sentence splitter
 - [x] part-of-speech tagger
 - [x] chunker (used to "find non-recursive syntactic annotations such as noun phrase chunks")
 - [x] parser

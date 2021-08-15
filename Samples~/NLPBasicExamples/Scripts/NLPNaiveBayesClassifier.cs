@@ -38,6 +38,7 @@ public class NLPNaiveBayesClassifier : MonoBehaviour
     classifyOptions.labels.Clear();
     classifyOptions.labels.TrimExcess();
 
+    // create tokenizer, pos tagger, and stemmer
     tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
     posTagger = new EnglishMaximumEntropyPosTagger(
       FileUtil.GetStreamingAssetFilePath(posTaggerModel),
@@ -53,6 +54,7 @@ public class NLPNaiveBayesClassifier : MonoBehaviour
 
     foreach (JToken intent in intents)
     {
+      // convert each sentences into a Sentence class and add it into the list
       foreach (JToken text in intent["text"])
         sentences.Add(new Sentence(
           ((string)text).ToLower(),
@@ -66,6 +68,7 @@ public class NLPNaiveBayesClassifier : MonoBehaviour
   public void TrainClassifier()
   {
     InitializeData();
+    // train and save the model
     classifier = new NaiveBayesClassifier();
     classifier.Train(sentences, classifyOptions);
     classifier.SaveModel(classifyOptions);
@@ -76,6 +79,7 @@ public class NLPNaiveBayesClassifier : MonoBehaviour
   {
     if (tokenizer == null)
     {
+      // recreate tokenizer, pos tagger, and stemmer if editor is being refreshed
       tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
       posTagger = new EnglishMaximumEntropyPosTagger(
         FileUtil.GetStreamingAssetFilePath(posTaggerModel),
@@ -84,9 +88,12 @@ public class NLPNaiveBayesClassifier : MonoBehaviour
       stemmer.CreatePattern();
     }
 
+    // convert string sentence to Sentence class
     Sentence sent = new Sentence(sentenceToClassify.ToLower(), "", tokenizer, posTagger, stemmer);
     classifier = new NaiveBayesClassifier();
     classifier.LoadModel(classifyOptions);
+
+    // take a look at all the vocabs that the classifier stored
     vocabs = classifier.words;
     List<Tuple<string, double>> result = classifier.Classify(sent, classifyOptions);
 
