@@ -66,7 +66,7 @@ namespace Voxell.NLP.Coreference
         }
 
     /// <summary>
-        /// An iterator over the mentions which iteratates through them based on their occurance in the document.
+        /// An iterator over the mentions which iteratates through them based on their occurrence in the document.
         /// </summary>
         public virtual IEnumerable<Mention.MentionContext> Mentions
         {

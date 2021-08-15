@@ -12,7 +12,7 @@ Example
 In this example, a pretrained model is used to split the paragraph into 3 individual sentences.
 
 **Note:**
-One might think that it is easy to split sentences. For example, we could just detect full stops and split the text based on the location of the full stop in the sentence. This however will not always work. If you look at the sentences below closely, you will notice that there are multiple occurance of the word **"Mr."** which consists of a full stop in itself. An accurate sentence splitter must be able to identify it.
+One might think that it is easy to split sentences. For example, we could just detect full stops and split the text based on the location of the full stop in the sentence. This however will not always work. If you look at the sentences below closely, you will notice that there are multiple occurrence of the word **"Mr."** which consists of a full stop in itself. An accurate sentence splitter must be able to identify it.
 
 .. code-block:: csharp
 
