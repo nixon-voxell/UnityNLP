@@ -1,8 +1,6 @@
+********
 UnityNLP
-========
-
-Introduction
-^^^^^^^^^^^^
+********
 
 This package references 2 repositories, `OpenNLP <https://github.com/AlexPoint/OpenNlp/>`_ and `CherubNLP <https://github.com/SciSharp/CherubNLP>`_. UnityNLP is a collection of natural language processing tools written in C#. Currently it provides the following NLP tools:
 
