@@ -4,6 +4,7 @@ checkpoints/
 inference/
 env/
 temp/
+build/
 
 # This .gitignore file should be placed at the root of your Unity project directory
 #
