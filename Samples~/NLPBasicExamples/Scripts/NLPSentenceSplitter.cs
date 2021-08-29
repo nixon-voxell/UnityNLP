@@ -3,7 +3,6 @@ using Voxell;
 using Voxell.NLP.SentenceDetect;
 using Voxell.Inspector;
 
-
 public class NLPSentenceSplitter : MonoBehaviour
 {
   [StreamingAssetFilePath] public string splitterModel;
