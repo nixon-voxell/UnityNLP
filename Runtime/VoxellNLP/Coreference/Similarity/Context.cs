@@ -15,7 +15,7 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 //This file is based on the Context.java source file found in the
-//original java implementation of Voxell.NLP.  That source file contains the following header:
+//original java implementation of OpenNLP. That source file contains the following header:
 
 //Copyright (C) 2003 Thomas Morton
 //
@@ -192,7 +192,7 @@ namespace Voxell.NLP.Coreference.Similarity
     {
       Util.Set<string> synsetSet = new Util.HashSet<string>();
       string[] lemmas = GetLemmas(context);
-            Mention.IDictionary dictionary = Mention.DictionaryFactory.GetDictionary();
+      Mention.IDictionary dictionary = Mention.DictionaryFactory.GetDictionary();
       //System.err.println(lemmas.length+" lemmas for "+c.headToken);
       for (int currentLemma = 0; currentLemma < lemmas.Length; currentLemma++)
       {
