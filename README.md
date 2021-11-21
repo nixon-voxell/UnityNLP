@@ -31,7 +31,10 @@ You can find the documentation at: https://unitynlp.readthedocs.io/
 
 ## Installation
 
-This package depends on the [UnityUtil](https://github.com/voxell-tech/UnityUtil) package and the [UnityAI](https://github.com/voxell-tech/UnityAI) package.
+External dependencies:
+
+- VX Util ([UnityUtil](https://github.com/voxell-tech/UnityUtil))
+- VX AI ([UnityAI](https://github.com/voxell-tech/UnityAI))
 
 1. Clone the [UnityUtil](https://github.com/voxell-tech/UnityUtil) repository into your `Packages` folder.
 2. Clone the [UnityAI](https://github.com/voxell-tech/UnityAI) repository into your `Packages` folder.
