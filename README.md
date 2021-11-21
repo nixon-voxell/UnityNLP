@@ -35,7 +35,7 @@ This package depends on the [UnityUtil](https://github.com/voxell-tech/UnityUtil
 
 1. Clone the [UnityUtil](https://github.com/voxell-tech/UnityUtil) repository into your `Packages` folder.
 2. Clone the [UnityAI](https://github.com/voxell-tech/UnityAI) repository into your `Packages` folder.
-3. Clone this repository into your Packages folder.
+3. Clone this repository into your `Packages` folder.
 4. Download all [essential models](https://drive.google.com/file/d/19bD2h0LBIArczYtQMHuoqdNRuUZrWdOX/view?usp=sharing) and import them into the project.
 5. Place the models in the StreamingAssets folder.
 6. And you are ready to go!
@@ -87,7 +87,7 @@ For the full list of part of speech abbreviations, please refer to the [Penn Tre
 
 ## License
 
-This repository as a whole is licensed under the GNU Public License, Version 3. Individual files may have a different, but compatible license.
+This repository as a whole is licensed under the Apache License 2.0. Individual files may have a different, but compatible license.
 
 See [license file](./LICENSE) for details.
 
