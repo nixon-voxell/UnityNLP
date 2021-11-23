@@ -2,15 +2,17 @@
 
 ## [1.1.0]
 
-- New Features
-  - Multinomial Naive Bayes topical classifier.
-  - Regex stemmer.
-  - One hot encoder.
-  - Text to vector.
-  - Tokens and Sentence class to store necessary features.
+### New Features
 
-- New Samples
-  - Multinomial Naive Bayes intent classifier with 22 classes.
+- Multinomial Naive Bayes topical classifier.
+- Regex stemmer.
+- One hot encoder.
+- Text to vector.
+- Tokens and Sentence class to store necessary features.
+
+### New Samples
+
+- Multinomial Naive Bayes intent classifier with 22 classes.
 
 ## [1.0.0]
 
