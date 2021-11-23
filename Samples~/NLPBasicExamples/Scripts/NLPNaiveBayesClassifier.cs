@@ -39,10 +39,10 @@ public class NLPNaiveBayesClassifier : MonoBehaviour
     classifyOptions.labels.TrimExcess();
 
     // create tokenizer, pos tagger, and stemmer
-    tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
+    tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
     posTagger = new EnglishMaximumEntropyPosTagger(
-      FileUtil.GetStreamingAssetFilePath(posTaggerModel),
-      FileUtil.GetStreamingAssetFilePath(tagDict));
+      FileUtilx.GetStreamingAssetFilePath(posTaggerModel),
+      FileUtilx.GetStreamingAssetFilePath(tagDict));
     stemmer = new RegexStemmer();
     stemmer.CreatePattern();
 
@@ -80,10 +80,10 @@ public class NLPNaiveBayesClassifier : MonoBehaviour
     if (tokenizer == null)
     {
       // recreate tokenizer, pos tagger, and stemmer if editor is being refreshed
-      tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
+      tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
       posTagger = new EnglishMaximumEntropyPosTagger(
-        FileUtil.GetStreamingAssetFilePath(posTaggerModel),
-        FileUtil.GetStreamingAssetFilePath(tagDict));
+        FileUtilx.GetStreamingAssetFilePath(posTaggerModel),
+        FileUtilx.GetStreamingAssetFilePath(tagDict));
       stemmer = new RegexStemmer();
       stemmer.CreatePattern();
     }

@@ -16,7 +16,7 @@ public class NLPNamedEntityRecognition : MonoBehaviour
   [Button]
   public void Recognize()
   {
-    nameFinder = new EnglishNameFinder(FileUtil.GetStreamingAssetFilePath(nameFinderModel));
+    nameFinder = new EnglishNameFinder(FileUtilx.GetStreamingAssetFilePath(nameFinderModel));
     ner = nameFinder.GetNames(models, sentence);
   }
 }

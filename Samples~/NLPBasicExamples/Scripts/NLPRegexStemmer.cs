@@ -17,7 +17,7 @@ public class NLPRegexStemmer : MonoBehaviour
   [Button]
   public void Stem()
   {
-    tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
+    tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
     regexStemmer = new RegexStemmer();
     regexStemmer.CreatePattern();
 

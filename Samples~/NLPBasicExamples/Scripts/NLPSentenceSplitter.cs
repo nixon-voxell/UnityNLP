@@ -14,7 +14,7 @@ public class NLPSentenceSplitter : MonoBehaviour
   [Button]
   void SplitSentence()
   {
-    sentenceDetector = new EnglishMaximumEntropySentenceDetector(FileUtil.GetStreamingAssetFilePath(splitterModel));
+    sentenceDetector = new EnglishMaximumEntropySentenceDetector(FileUtilx.GetStreamingAssetFilePath(splitterModel));
     sentences = sentenceDetector.SentenceDetect(paragraph);
   }
 }

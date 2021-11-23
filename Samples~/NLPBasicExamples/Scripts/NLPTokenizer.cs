@@ -14,7 +14,7 @@ public class NLPTokenizer : MonoBehaviour
   [Button]
   public void Tokenize()
   {
-    tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
+    tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
     tokens = tokenizer.Tokenize(sentence);
   }
 }

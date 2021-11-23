@@ -16,6 +16,6 @@ namespace Voxell.NLP.Classifier
       if (!labels.Contains(label)) labels.Add(label);
     }
 
-    public string GetModelFilePath() => FileUtil.GetStreamingAssetFilePath(modelFilePath);
+    public string GetModelFilePath() => FileUtilx.GetStreamingAssetFilePath(modelFilePath);
   }
 }
