@@ -159,6 +159,53 @@ A ``[Button]`` attribute is added so that we can run this function from the Unit
 Classifying a sentence
 ======================
 
+We will create another button on the Unity Inspector to classify a given sentence.
+But before that, we will need to create some new variables to hold the sentence that we want to classify
+and the result from the classfier model.
+
+.. code-block:: csharp
+
+  public string sentenceToClassify;
+  [InspectOnly] public string classifiedLabel;
+  [InspectOnly] public double highestConfidence;
+
+And now, the classify function.
+
+.. code-block:: csharp
+
+  [Button]
+  public void Classify()
+  {
+    if (_tokenizer == null)
+    {
+      // recreate _tokenizer, pos tagger, and _stemmer if editor is being refreshed
+      _tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
+      _posTagger = new EnglishMaximumEntropyPosTagger(
+        FileUtilx.GetStreamingAssetFilePath(posTaggerModel),
+        FileUtilx.GetStreamingAssetFilePath(tagDict));
+      _stemmer = new RegexStemmer();
+      _stemmer.CreatePattern();
+    }
+
+    // convert string sentence to Sentence class
+    Sentence sent = new Sentence(sentenceToClassify.ToLower(), "", _tokenizer, _posTagger, _stemmer);
+    _classifier = new NaiveBayesClassifier();
+    _classifier.LoadModel(classifyOptions);
+
+    List<Tuple<string, double>> result = _classifier.Classify(sent, classifyOptions);
+
+    classifiedLabel = "";
+    highestConfidence = 0.0;
+    for (int r=0; r < result.Count; r++)
+    {
+      if (result[r].Item2 > highestConfidence)
+      {
+        classifiedLabel = result[r].Item1;
+        highestConfidence = result[r].Item2;
+      }
+    }
+  }
+
 Full Script
 ===========
 
