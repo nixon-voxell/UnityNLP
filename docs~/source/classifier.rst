@@ -255,10 +255,10 @@ You can find this sample script by importing the `NLP Basic Examples` from the `
       classifyOptions.labels.TrimExcess();
 
       // create tokenizer, pos tagger, and stemmer
-      tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
+      tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
       posTagger = new EnglishMaximumEntropyPosTagger(
-        FileUtil.GetStreamingAssetFilePath(posTaggerModel),
-        FileUtil.GetStreamingAssetFilePath(tagDict));
+        FileUtilx.GetStreamingAssetFilePath(posTaggerModel),
+        FileUtilx.GetStreamingAssetFilePath(tagDict));
       stemmer = new RegexStemmer();
       stemmer.CreatePattern();
 
@@ -296,10 +296,10 @@ You can find this sample script by importing the `NLP Basic Examples` from the `
       if (tokenizer == null)
       {
         // recreate tokenizer, pos tagger, and stemmer if editor is being refreshed
-        tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
+        tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
         posTagger = new EnglishMaximumEntropyPosTagger(
-          FileUtil.GetStreamingAssetFilePath(posTaggerModel),
-          FileUtil.GetStreamingAssetFilePath(tagDict));
+          FileUtilx.GetStreamingAssetFilePath(posTaggerModel),
+          FileUtilx.GetStreamingAssetFilePath(tagDict));
         stemmer = new RegexStemmer();
         stemmer.CreatePattern();
       }
