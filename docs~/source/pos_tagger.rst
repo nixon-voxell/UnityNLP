@@ -37,10 +37,10 @@ You can find the full list of part-of-speech tags along with their meanings `her
     public void Tag()
     {
       // link to POS tags meanings: https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
-      tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
+      tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
       posTagger = new EnglishMaximumEntropyPosTagger(
-        FileUtil.GetStreamingAssetFilePath(posTaggerModel),
-        FileUtil.GetStreamingAssetFilePath(tagDict));
+        FileUtilx.GetStreamingAssetFilePath(posTaggerModel),
+        FileUtilx.GetStreamingAssetFilePath(tagDict));
 
       tokens = tokenizer.Tokenize(sentence);
       posTags = posTagger.Tag(tokens);

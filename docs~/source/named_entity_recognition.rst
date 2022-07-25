@@ -31,7 +31,7 @@ In this example, a pretrained model that is capable of identifying 7 categories 
     [Button]
     public void Recognize()
     {
-      nameFinder = new EnglishNameFinder(FileUtil.GetStreamingAssetFilePath(nameFinderModel));
+      nameFinder = new EnglishNameFinder(FileUtilx.GetStreamingAssetFilePath(nameFinderModel));
       ner = nameFinder.GetNames(models, sentence);
     }
   }

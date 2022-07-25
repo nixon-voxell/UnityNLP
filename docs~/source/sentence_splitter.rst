@@ -33,7 +33,7 @@ One might think that it is easy to split sentences. For example, we could just d
     [Button]
     void SplitSentence()
     {
-      sentenceDetector = new EnglishMaximumEntropySentenceDetector(FileUtil.GetStreamingAssetFilePath(splitterModel));
+      sentenceDetector = new EnglishMaximumEntropySentenceDetector(FileUtilx.GetStreamingAssetFilePath(splitterModel));
       sentences = sentenceDetector.SentenceDetect(paragraph);
     }
   }

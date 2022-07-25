@@ -29,7 +29,7 @@ In this example, a pretrained model is used to tokenize a fairly complex sentenc
     [Button]
     public void Tokenize()
     {
-      tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
+      tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
       tokens = tokenizer.Tokenize(sentence);
     }
   }
