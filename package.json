@@ -23,5 +23,6 @@
     "voxell.util": "1.1.0",
     "voxell.ai": "1.0.0",
     "com.unity.nuget.newtonsoft-json": "2.0.0"
-  }
+  },
+  "hideInEditor": false
 }

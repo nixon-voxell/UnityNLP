@@ -161,7 +161,7 @@ Classifying a sentence
 
 We will create another button on the Unity Inspector to classify a given sentence.
 But before that, we will need to create some new variables to hold the sentence that we want to classify
-and the result from the classfier model.
+and the result from the classifier model.
 
 .. code-block:: csharp
 
