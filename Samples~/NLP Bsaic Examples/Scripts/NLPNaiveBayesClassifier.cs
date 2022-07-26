@@ -25,41 +25,39 @@ public class NLPNaiveBayesClassifier : MonoBehaviour
   [InspectOnly] public string classifiedLabel;
   [InspectOnly] public double highestConfidence;
 
-  private NaiveBayesClassifier classifier;
-  private EnglishMaximumEntropyTokenizer tokenizer;
-  private EnglishMaximumEntropyPosTagger posTagger;
-  private RegexStemmer stemmer;
+  private NaiveBayesClassifier _classifier;
+  private EnglishMaximumEntropyTokenizer _tokenizer;
+  private EnglishMaximumEntropyPosTagger _posTagger;
+  private RegexStemmer _stemmer;
 
   public void InitializeData()
   {
     // reset data
     sentences.Clear();
-    sentences.TrimExcess();
     classifyOptions.labels.Clear();
-    classifyOptions.labels.TrimExcess();
 
-    // create tokenizer, pos tagger, and stemmer
-    tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
-    posTagger = new EnglishMaximumEntropyPosTagger(
+    // create _tokenizer, pos tagger, and _stemmer
+    _tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
+    _posTagger = new EnglishMaximumEntropyPosTagger(
       FileUtilx.GetStreamingAssetFilePath(posTaggerModel),
       FileUtilx.GetStreamingAssetFilePath(tagDict));
-    stemmer = new RegexStemmer();
-    stemmer.CreatePattern();
+    _stemmer = new RegexStemmer();
+    _stemmer.CreatePattern();
 
     // generate data
-    var data = JsonConvert.DeserializeObject<JObject>(dataset.text);
+    JObject data = JsonConvert.DeserializeObject<JObject>(dataset.text);
     JToken intents = data["intents"];
-    foreach (JToken intent in intents)
-      classifyOptions.AddLabel((string)intent["intent"]);
 
     foreach (JToken intent in intents)
     {
+      string label = (string)intent["intent"];
+      classifyOptions.AddLabel(label);
       // convert each sentences into a Sentence class and add it into the list
       foreach (JToken text in intent["text"])
         sentences.Add(new Sentence(
           ((string)text).ToLower(),
-          (string)intent["intent"],
-          tokenizer, posTagger, stemmer
+          label,
+          _tokenizer, _posTagger, _stemmer
         ));
     }
   }
@@ -69,33 +67,33 @@ public class NLPNaiveBayesClassifier : MonoBehaviour
   {
     InitializeData();
     // train and save the model
-    classifier = new NaiveBayesClassifier();
-    classifier.Train(sentences, classifyOptions);
-    classifier.SaveModel(classifyOptions);
+    _classifier = new NaiveBayesClassifier();
+    _classifier.Train(sentences, classifyOptions);
+    _classifier.SaveModel(classifyOptions);
   }
 
   [Button]
   public void Classify()
   {
-    if (tokenizer == null)
+    if (_tokenizer == null)
     {
-      // recreate tokenizer, pos tagger, and stemmer if editor is being refreshed
-      tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
-      posTagger = new EnglishMaximumEntropyPosTagger(
+      // recreate _tokenizer, pos tagger, and _stemmer if editor is being refreshed
+      _tokenizer = new EnglishMaximumEntropyTokenizer(FileUtilx.GetStreamingAssetFilePath(tokenizerModel));
+      _posTagger = new EnglishMaximumEntropyPosTagger(
         FileUtilx.GetStreamingAssetFilePath(posTaggerModel),
         FileUtilx.GetStreamingAssetFilePath(tagDict));
-      stemmer = new RegexStemmer();
-      stemmer.CreatePattern();
+      _stemmer = new RegexStemmer();
+      _stemmer.CreatePattern();
     }
 
     // convert string sentence to Sentence class
-    Sentence sent = new Sentence(sentenceToClassify.ToLower(), "", tokenizer, posTagger, stemmer);
-    classifier = new NaiveBayesClassifier();
-    classifier.LoadModel(classifyOptions);
+    Sentence sent = new Sentence(sentenceToClassify.ToLower(), "", _tokenizer, _posTagger, _stemmer);
+    _classifier = new NaiveBayesClassifier();
+    _classifier.LoadModel(classifyOptions);
 
-    // take a look at all the vocabs that the classifier stored
-    vocabs = classifier.words;
-    List<Tuple<string, double>> result = classifier.Classify(sent, classifyOptions);
+    // take a look at all the vocabs that the _classifier stored
+    vocabs = _classifier.words;
+    List<Tuple<string, double>> result = _classifier.Classify(sent, classifyOptions);
 
     classifiedLabel = "";
     highestConfidence = 0.0;

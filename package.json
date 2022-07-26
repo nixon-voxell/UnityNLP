@@ -16,7 +16,7 @@
     {
       "displayName": "NLP Bsaic Examples",
       "description": "Some example scripts to go through the basics of this package.",
-      "path": "Samples~/NLPBasicExamples"
+      "path": "Samples~/NLP Basic Examples"
     }
   ],
   "dependencies": {
